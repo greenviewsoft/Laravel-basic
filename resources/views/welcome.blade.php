@@ -25,7 +25,7 @@
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
+                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
@@ -39,9 +39,13 @@
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                 </div>
-<h2 class=" sm:pt-0">Home Page</h2>
+<h2 class=" sm:pt-0">Dashboard Page</h2>
 
-<img src="https://logos.textgiraffe.com/logos/logo-name/Sultan-designstyle-kiddo-m.png" alt="" style="height:40px; width:190px;  ">
+<a href="{{ url('/')}}">Dashboard</a> 
+<a href="{{ URL::to('about') }}">about</a> 
+<a href="{{ URL::to('contact') }}">Contact</a> 
+
+<img src="https://logos.textgiraffe.com/logos/logo-name/Sultan-designstyle-kiddo-m.png" alt="" style="height:50px; width:290px;  ">
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
